@@ -25,7 +25,7 @@ txn = {
     "chainId": 80001
 }
 
-signed_tx = w3.eth.account.sign_transaction(txn, private_key = 'b710a8debaca1ff880d9d434c8af6288f3c9113a7ef6525d20391bafcbd9da7e')
+signed_tx = w3.eth.account.sign_transaction(txn, private_key = 'your wallet private key')
 
 # print(signed_tx)
 

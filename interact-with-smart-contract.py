@@ -37,7 +37,7 @@ txn = hospitalRecordContract.functions.addUser("pratik2").build_transaction({
 })
 
 signed_txn = w3.eth.account.sign_transaction(
-    txn, private_key='c521c7f8d016b35327c6623c95469271a3b1a06c197dd9942ed6f5586680a075')
+    txn, private_key='your wallet private key')
 
 txn_hash = w3.eth.send_raw_transaction(signed_txn.rawTransaction)
 txn_receipt = w3.eth.wait_for_transaction_receipt(txn_hash)
